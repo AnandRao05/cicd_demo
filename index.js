@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("Hello GitHub CI/CD 🚀");
+    res.send("CI/CD Auto Deploy Working 🚀");
 });
 
 module.exports = app;
