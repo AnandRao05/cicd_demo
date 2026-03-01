@@ -5,7 +5,11 @@ app.get('/', (req, res) => {
     res.send("Hello GitHub CI/CD 🚀");
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
+
+if (require.main === module) {
+    const PORT = 3000;
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+    });
+}
