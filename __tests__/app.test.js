@@ -4,5 +4,5 @@ const app = require('../index');
 test('GET / should return hello message', async () => {
   const res = await request(app).get('/');
   expect(res.statusCode).toBe(200);
-  expect(res.text).toBe("Hello GitHub CI/CD 🚀");
+  expect(res.text).toBe("CI/CD Auto Deploy Working 🚀");
 });
